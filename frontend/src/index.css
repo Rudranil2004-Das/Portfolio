@@ -90,3 +90,35 @@ footer { text-align: center; padding: 30px; color: var(--muted); border-top: 1px
   .avatar-wrap { width: 240px; height: 240px; }
   .btns { justify-content: center; }
 }
+
+/* ---- Added: CV content sections ---- */
+.marquee { position: relative; z-index: 1; overflow: hidden; border-block: 1px solid var(--border); background: rgba(255,255,255,.02); padding: 16px 0; }
+.track { display: flex; gap: 48px; width: max-content; animation: scroll 28s linear infinite; }
+.track span { color: var(--muted); font-family: "Space Grotesk", sans-serif; white-space: nowrap; }
+.track span:nth-child(odd) { color: var(--accent2); }
+.marquee:hover .track { animation-play-state: paused; }
+@keyframes scroll { to { transform: translateX(-50%); } }
+
+.prose p { color: var(--muted); line-height: 1.85; }
+.prose p + p { margin-top: 14px; }
+.lang-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.lang-row small { color: var(--accent2); }
+
+.group-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 50px; }
+.group h3 { font-size: 1.05rem; margin-bottom: 14px; }
+.subhead { font-size: 1.5rem; margin: 50px 0 20px; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px; }
+.filter { padding: 8px 20px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); color: var(--muted); font-family: inherit; font-size: .9rem; cursor: pointer; transition: .3s; }
+.filter:hover { color: var(--text); border-color: var(--accent); }
+.filter.active { background: var(--grad); color: #fff; border-color: transparent; }
+.projects > div { height: 100%; }
+.project { height: 100%; display: flex; flex-direction: column; }
+.project .tags { margin-top: auto; }
+.proj-link { display: inline-block; margin-top: 18px; color: var(--accent2); font-size: .9rem; transition: .3s; }
+.proj-link:hover { transform: translateX(6px); }
+
+.contact-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 40px; }
+.link-card { display: flex; flex-direction: column; gap: 6px; transition: .3s; word-break: break-word; }
+.link-card span { color: var(--muted); font-size: .85rem; }
+.link-card:hover { transform: translateY(-6px); border-color: var(--accent); }

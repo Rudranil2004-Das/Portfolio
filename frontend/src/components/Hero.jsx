@@ -35,6 +35,7 @@ export default function Hero() {
         <motion.div className="btns" {...item(4)}>
           <a href="#projects" className="btn primary">View My Work</a>
           <a href="#contact" className="btn">Contact Me</a>
+          <a href={profile.github} target="_blank" rel="noreferrer" className="btn">GitHub</a>
         </motion.div>
       </div>
       <motion.div className="avatar-wrap float" initial={{ opacity: 0, scale: 0.6, rotate: -20 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: 1, delay: 0.4, type: "spring" }}>

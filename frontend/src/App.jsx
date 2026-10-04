@@ -3,7 +3,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import Particles from "./components/Particles";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import { About, Skills, Experience, Projects, Contact } from "./components/Sections";
+import { Highlights, About, Skills, Experience, Projects, Contact } from "./components/Sections";
 
 export default function App() {
   const { scrollYProgress } = useScroll();
@@ -23,6 +23,7 @@ export default function App() {
       <Particles />
       <Navbar />
       <Hero />
+      <Highlights />
       <About />
       <Skills />
       <Experience />
