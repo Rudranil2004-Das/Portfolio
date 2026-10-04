@@ -122,3 +122,4 @@ footer { text-align: center; padding: 30px; color: var(--muted); border-top: 1px
 .link-card { display: flex; flex-direction: column; gap: 6px; transition: .3s; word-break: break-word; }
 .link-card span { color: var(--muted); font-size: .85rem; }
 .link-card:hover { transform: translateY(-6px); border-color: var(--accent); }
+.avatar-wrap img { object-position: center 8%; }
